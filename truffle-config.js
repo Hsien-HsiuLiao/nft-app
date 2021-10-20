@@ -1,3 +1,8 @@
+const provider = require('@truffle/hdwallet-provider');
+const fs = require('fs');
+const secrets = JSON.parse(
+  fs.readFileSync(".secrets.json").toString().trim()
+);
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -34,8 +39,20 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
+  contracts_build_directory: './frontend/src/contracts',
 
   networks: {
+    rinkeby: {
+      provider: () =>
+        new provider (
+          secrets.privateKeys,
+          'https://rinkeby.infura.io/v3/e8746dd884324d37984f917e061064ee',
+          0,
+          1
+        ),
+      network_id: 4,
+      skipDryRun: true
+    }
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal
@@ -82,7 +99,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      // version: "0.5.1",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.0",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
