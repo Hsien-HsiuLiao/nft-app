@@ -10,7 +10,7 @@ const getBlockchain = () =>
                 const signer = provider.getSigner();
 
                 const nft = new Contract(
-                    NFT.networks[window.etheruem.networkVersion].address,
+                    NFT.networks[window.ethereum.networkVersion].address,
                     NFT.abi,
                     signer
                 );
