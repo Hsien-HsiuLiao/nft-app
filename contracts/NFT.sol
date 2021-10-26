@@ -17,6 +17,6 @@ contract NFT is ERC721 {
     }
 
     function _baseURI() internal view override returns (string memory) {
-        return 'https://hidden-headland-80264.herokuapp.com';
+        return 'https://hidden-headland-80264.herokuapp.com/';
     }
 }
