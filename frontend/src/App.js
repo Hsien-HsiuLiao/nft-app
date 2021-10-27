@@ -21,13 +21,13 @@ function App() {
   }
 
   return (
-    <div className="container">
+    <div className='container'>
       <div className='row'>
         <div className='col-sm-12'>
           <h1 className='text-center'>{tokenInfo.name}</h1>
           <div className="jumbotron">
             <p className="lead text-center">{tokenInfo.description}</p>
-            <img src={tokenInfo.image} className="img-fluid" />
+            <img src={tokenInfo.image} className="img-fluid" width="50%" />
           </div>
         </div>
       </div>
