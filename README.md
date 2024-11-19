@@ -19,6 +19,7 @@ https://www.coindesk.com/tech/2022/10/04/etherscan-set-to-deprecate-ethereums-ro
 
 ## convert to hardhat
 `npm install -D hardhat`
+
 `npx hardhat` - choose empty
 
 DEPRECATION WARNING
@@ -28,4 +29,25 @@ DEPRECATION WARNING
 
  `npm install -D @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai`
 
+
+ ## deploying to local blockchain
+ `mkdir scripts`
+
+ `touch scripts/deploy.js`
+
+ `npx hardhat run scripts/deploy.js`
+
+ The library @openzeppelin/contracts, imported from contracts/NFT.sol, is not installed. Try installing it using npm
+
+ https://www.npmjs.com/package/@openzeppelin/contracts
+
+ `npm install @openzeppelin/contracts`
+
+
+
+ ## deploying to testnet
+
+ https://www.infura.io/
+
  
+
