@@ -16,3 +16,16 @@ https://www.coindesk.com/tech/2022/10/04/etherscan-set-to-deprecate-ethereums-ro
 * with the url, the front end sends a request to the backend, backend responds with metadata of token (json document)
 * json doc has url of image of NFT
 * then frontend will fetch image from server and also display metadata
+
+## convert to hardhat
+`npm install -D hardhat`
+`npx hardhat` - choose empty
+
+DEPRECATION WARNING
+
+ Initializing a project with npx hardhat is deprecated and will be removed in the future.
+ Please use npx hardhat init instead.
+
+ `npm install -D @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai`
+
+ 
