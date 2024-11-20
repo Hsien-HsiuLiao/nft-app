@@ -49,5 +49,12 @@ DEPRECATION WARNING
 
  https://www.infura.io/
 
- 
+ sepolia testnet
+
+ https://docs.metamask.io/developer-tools/faucet/
+
+To prevent bots and abuse, this faucet requires a minimum Ethereum mainnet balance of 0.001 ETH on the wallet address being used.
+ https://www.alchemy.com/faucets/ethereum-sepolia
+
+
 
