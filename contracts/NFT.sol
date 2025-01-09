@@ -17,6 +17,7 @@ contract NFT is ERC721 {
     }
 
     function _baseURI() internal view override returns (string memory) {
+        // from backend/tokens.json base URL for NFT image. need to have forward slash at end
         return 'https://hidden-headland-80264.herokuapp.com/';
     }
 }
