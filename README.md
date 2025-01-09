@@ -56,5 +56,7 @@ DEPRECATION WARNING
 To prevent bots and abuse, this faucet requires a minimum Ethereum mainnet balance of 0.001 ETH on the wallet address being used.
  https://www.alchemy.com/faucets/ethereum-sepolia
 
+ https://sepolia.etherscan.io/tx/0xce541a811f7307d5a2e5259f85a3daab2ba3c984d55524a33ccce027768b59c3
+
 
 
