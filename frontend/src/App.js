@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   if(typeof tokenInfo === 'undefined') {
-    return 'Loading...';
+    return 'Getting token info...';
   }
 
   return (
