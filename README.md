@@ -58,5 +58,25 @@ To prevent bots and abuse, this faucet requires a minimum Ethereum mainnet balan
 
  https://sepolia.etherscan.io/tx/0xce541a811f7307d5a2e5259f85a3daab2ba3c984d55524a33ccce027768b59c3
 
+# heroku no longer free
+https://medium.com/@theHocineSaad/heroku-is-no-longer-free-here-are-the-best-alternatives-1c22d814e51d
+
+Heroku alternatives
+
+Just after I heard the news of Heroku stopping their free plans, I started searching for some alternatives that offer a free plan, here are the ones I found:
+
+    Render
+    Railway
+    Fly
+    Northflank
+    Qoddi
+    Koyeb
+
+PAAS with free tiers: https://github.com/ripienaar/free-for-dev#paas
+
+https://medium.com/@catalystbyzoho/looking-for-a-heroku-alternative-try-the-catalyst-free-trial-today-3e51b8cc7ed9
+
+https://catalyst.zoho.com/
+
 
 
