@@ -10,6 +10,8 @@ https://www.coindesk.com/tech/2022/10/04/etherscan-set-to-deprecate-ethereums-ro
 
 * frontend - deployed to https://hhl-nft-app.netlify.app/ , also deployed frontend as docker container to AWS Fargate
 
+Deploy a Serverless React App to AWS Fargate https://www.youtube.com/watch?v=9nrgqtFHMUc
+
 ### what does it do?
 * The app allows an NFT to be displayed in a web browser
 * when loaded in a broswer, the front end will send a request to the smart contract of the NFT to get the url of the metadata
