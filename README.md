@@ -16,10 +16,9 @@ rinkeby deprecated- https://github.com/Hsien-HsiuLiao/nft-app/issues/2
 
 ### what does it do?
 * The app allows an NFT to be displayed in a web browser
-* when loaded in a broswer, the front end will send a request to the smart contract of the NFT to get the url of the metadata
-* with the url, the front end sends a request to the backend, backend responds with metadata of token (json document)
-* json doc has url of image of NFT
-* then frontend will fetch image from server and also display metadata
+* when loaded in a broswer, the front end will send a request though Metamask to the NFT smart contract on Ethereum to get the url of the metadata by calling the tokenURI function and passing tokenId
+* with the url, the front end sends a GET request to the backend via axios, the backend responds with metadata of token (json document) for the tokenId requested 
+* then frontend will parse and format metadata to display 
 
 ## convert to hardhat
 `npm install -D hardhat`
@@ -89,3 +88,6 @@ https://catalyst.zoho.com/
 - cd frontend
 - npm install
 - npm start
+
+### netlify
+- compile frontend with `npm run build`
