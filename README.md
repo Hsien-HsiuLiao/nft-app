@@ -83,4 +83,9 @@ https://medium.com/@catalystbyzoho/looking-for-a-heroku-alternative-try-the-cata
 https://catalyst.zoho.com/
 
 
+### local development
 
+- clone repo
+- cd frontend
+- npm install
+- npm start
