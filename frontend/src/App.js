@@ -1,23 +1,30 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import getBlockchain from './ethereum.js';
 import axios from 'axios';
 
 function App() {
   const [tokenInfo, setTokenInfo] = useState(undefined);
 
-  useEffect( () => {
+  /* useEffect( () => {
     const init = async () => {
       const { nft } = await getBlockchain();
       const tokenURI = await nft.tokenURI(0);
       const { data } = await axios.get(tokenURI);
-      console.log(data.result.image);
+     // console.log(data.result.image);
       setTokenInfo(data.result);
     };
     init();
-  }, []);
+  }, []); */
 
-  if(typeof tokenInfo === 'undefined') {
-    return 'Getting token info...';
+  if (typeof tokenInfo === 'undefined') {
+    return (
+      <div>
+      <h3>Getting token info...</h3>
+      <p>install MetaMask <a href="https://metamask.io/"> https://metamask.io/</a></p>
+      <button>Connect MetaMask</button>
+      <p>Connect Metamask to the testnet to display the NFT</p>
+      </div>
+    );
   }
 
   return (
