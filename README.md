@@ -28,6 +28,13 @@
  https://sepolia.etherscan.io/tx/0xce541a811f7307d5a2e5259f85a3daab2ba3c984d55524a33ccce027768b59c3
 
 
+Your .env should look like this:
+
+Shell
+```
+API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key" //or infura
+PRIVATE_KEY = "your-metamask-private-key"
+```
 
 ### local development
 
