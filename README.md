@@ -1,14 +1,4 @@
 # NFT app
-*  NodeJS backend deployed to heroku https://hidden-headland-80264.herokuapp.com
-
-
-
-* smart contact NFT.sol deployed https://rinkeby.etherscan.io/address/0xB5FE979191DF12cE5B9aF5f1A767880979D947Df , redelpoyed 
-0xc0a49C9618024157E7d5074cFa46F5008E2d4B8F
-
-rinkeby deprecated- https://github.com/Hsien-HsiuLiao/nft-app/issues/2
-
-
 
 * frontend - deployed to https://hhl-nft-app.netlify.app/ , also deployed frontend as docker container to AWS Fargate
 
@@ -20,31 +10,10 @@ rinkeby deprecated- https://github.com/Hsien-HsiuLiao/nft-app/issues/2
 * with the url, the front end sends a GET request to the backend via axios, the backend responds with metadata of token (json document) for the tokenId requested 
 * then frontend will parse and format metadata to display 
 
-## convert to hardhat
-`npm install -D hardhat`
-
-`npx hardhat` - choose empty
-
-DEPRECATION WARNING
-
- Initializing a project with npx hardhat is deprecated and will be removed in the future.
- Please use npx hardhat init instead.
-
- `npm install -D @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai`
-
 
  ## deploying to local blockchain
- `mkdir scripts`
-
- `touch scripts/deploy.js`
 
  `npx hardhat run scripts/deploy.js`
-
- The library @openzeppelin/contracts, imported from contracts/NFT.sol, is not installed. Try installing it using npm
-
- https://www.npmjs.com/package/@openzeppelin/contracts
-
- `npm install @openzeppelin/contracts`
 
 
 
@@ -54,32 +23,10 @@ DEPRECATION WARNING
 
  sepolia testnet
 
- https://docs.metamask.io/developer-tools/faucet/
-
-To prevent bots and abuse, this faucet requires a minimum Ethereum mainnet balance of 0.001 ETH on the wallet address being used.
  https://www.alchemy.com/faucets/ethereum-sepolia
 
  https://sepolia.etherscan.io/tx/0xce541a811f7307d5a2e5259f85a3daab2ba3c984d55524a33ccce027768b59c3
 
-# heroku no longer free
-https://medium.com/@theHocineSaad/heroku-is-no-longer-free-here-are-the-best-alternatives-1c22d814e51d
-
-Heroku alternatives
-
-Just after I heard the news of Heroku stopping their free plans, I started searching for some alternatives that offer a free plan, here are the ones I found:
-
-    Render
-    Railway
-    Fly
-    Northflank
-    Qoddi
-    Koyeb
-
-PAAS with free tiers: https://github.com/ripienaar/free-for-dev#paas
-
-https://medium.com/@catalystbyzoho/looking-for-a-heroku-alternative-try-the-catalyst-free-trial-today-3e51b8cc7ed9
-
-https://catalyst.zoho.com/
 
 
 ### local development
