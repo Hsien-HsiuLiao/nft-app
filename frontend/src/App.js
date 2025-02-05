@@ -23,6 +23,7 @@ function App() {
       <p>install MetaMask <a href="https://metamask.io/"> https://metamask.io/</a></p>
       <button>Connect MetaMask</button>
       <p>Connect Metamask to the testnet to display the NFT</p>
+      <p>Get test eth sepolia <a href="https://www.alchemy.com/faucets/ethereum-sepolia">faucet</a></p>
       </div>
     );
   }
