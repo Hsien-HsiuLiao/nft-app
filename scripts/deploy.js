@@ -12,11 +12,20 @@ async function main() {
   const nft = await NFT.deploy();
   console.log(`NFT address: ${nft.address}`);
 
+ /*  
+ truffle 2_deploy_contracts.js
+ module.exports = async function (deployer, _network, accounts) {
+    await deployer.deploy(NFT);
+    const nft = await NFT.deployed();
+    await nft.mint(accounts[0]);
+  }; */
+  
+
   const data = {
     address: nft.address,
     abi: JSON.parse(nft.interface.format('json'))
   };
-  fs.writeFileSync('frontend/src/NFT.json', JSON.stringify(data)); 
+  fs.writeFileSync('frontend/src/contracts/NFT.json', JSON.stringify(data)); 
 }
 
 main()
