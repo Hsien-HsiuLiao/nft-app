@@ -37,7 +37,7 @@ import NFT from './contracts/NFT.json';
             await window.ethereum.enable();
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();
-      
+      console.log("NFT", NFT);
             const nft = new Contract(
               NFT.networks[window.ethereum.networkVersion].address,
               NFT.abi,

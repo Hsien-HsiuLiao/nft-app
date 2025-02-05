@@ -19,6 +19,7 @@ function App() {
   const handleClick = async () => {
     console.log('Button clicked!');
     const { nft } = await getBlockchain();
+    console.log("nft",nft);
     const tokenURI = "https://gateway.pinata.cloud/ipfs/bafkreid43ipihuvs4a2gu46ekp4cqjlq3wee52vfp5sj2jbxqgcoj2tfem/"
     const { data } = await axios.get(tokenURI);
     console.log(data[0]);
@@ -33,7 +34,7 @@ function App() {
       <div>
         <h3>Getting token info...</h3>
         <p>install MetaMask <a href="https://metamask.io/"> https://metamask.io/</a></p>
-        <button onClick={handleClick}>Connect MetaMask</button>
+        <button onClick={handleClick}>Connect MetaMask to the dapp</button>
         <p>Connect Metamask to the testnet to display the NFT</p>
         <p>Get test eth sepolia <a href="https://www.alchemy.com/faucets/ethereum-sepolia">faucet</a></p>
       </div>
