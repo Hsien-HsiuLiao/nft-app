@@ -1,5 +1,5 @@
 import { ethers, Contract } from "ethers";
-import NFT from './contracts/NFT.json';
+import NFTcontract from './contracts/NFT.json';
 
 /* const getBlockchain = () => new Promise((resolve, reject) => {
         window.addEventListener('load', async () => {
@@ -37,10 +37,12 @@ import NFT from './contracts/NFT.json';
             await window.ethereum.enable();
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();
-      console.log("NFT", NFT);
+      console.log("NFT", NFTcontract);
             const nft = new Contract(
-              NFT.networks[window.ethereum.networkVersion].address,
-              NFT.abi,
+              //  NFTcontract.networks[window.ethereum.networkVersion].address,
+                NFTcontract.address,
+
+                NFTcontract.abi,
               signer
             );
       
@@ -51,7 +53,7 @@ import NFT from './contracts/NFT.json';
           }
         }
       
-        return { nft: undefined };
+        return { nft: undefined }; //another?
       };
 
 export default getBlockchain;
