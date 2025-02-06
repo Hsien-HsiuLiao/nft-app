@@ -36,6 +36,13 @@ API_URL = "https://eth-sepolia.g.alchemy.com/v2/your-api-key" //or infura
 PRIVATE_KEY = "your-metamask-private-key"
 ```
 
+`npx hardhat run scripts/deploy.js --network sepolia`
+
+deployed to 
+
+https://sepolia.etherscan.io/address/0x97848BfB241EBd360e3B21dA36eFB7B366017c3E
+
+
 ### local development
 
 - clone repo
