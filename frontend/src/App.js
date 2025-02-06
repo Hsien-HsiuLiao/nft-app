@@ -20,10 +20,12 @@ function App() {
     console.log('Button clicked!');
     const { nft } = await getBlockchain();
     console.log("nft",nft);
-    const tokenURI = "https://gateway.pinata.cloud/ipfs/bafkreid43ipihuvs4a2gu46ekp4cqjlq3wee52vfp5sj2jbxqgcoj2tfem/"
+    const tokenId = 0;
+    const tokenURI = await nft.tokenURI(tokenId); //"https://gateway.pinata.cloud/ipfs/bafkreid43ipihuvs4a2gu46ekp4cqjlq3wee52vfp5sj2jbxqgcoj2tfem/"
+    console.log(tokenURI);
     const { data } = await axios.get(tokenURI);
-    console.log(data[0]);
-    setTokenInfo(data[0]);
+    console.log(data[tokenId]);
+    setTokenInfo(data[tokenId]);
     console.log(tokenInfo);
   };
 
