@@ -48,7 +48,7 @@ import NFTcontract from './contracts/NFT.json';
       
             return { nft };
           } catch (error) {
-            console.error(error);
+            console.error("error connecting to blockchain", error);
             return { nft: undefined };
           }
         }
