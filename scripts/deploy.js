@@ -7,10 +7,13 @@ async function main() {
   const balance = await deployer.getBalance();
   console.log(`Account balance: ${balance.toString()}`);
 
-  //change contract name to NFT
+  // Grab the contract factory 
   const NFT = await ethers.getContractFactory('NFT');
-  const nft = await NFT.deploy();
-  console.log(`NFT address: ${nft.address}`);
+  // Start deployment, returning a promise that resolves to a contract object
+  const contract = await NFT.deploy();
+  console.log(`NFT address: ${contract.address}`);
+
+  await contract.deployed();
 
  /*  
  truffle 2_deploy_contracts.js
@@ -19,11 +22,11 @@ async function main() {
     const nft = await NFT.deployed();
     await nft.mint(accounts[0]);
   }; */
-  
+  await contract.mint(deployer.address);
 
   const data = {
-    address: nft.address,
-    abi: JSON.parse(nft.interface.format('json'))
+    address: contract.address,
+    abi: JSON.parse(contract.interface.format('json'))
   };
   fs.writeFileSync('frontend/src/contracts/NFT.json', JSON.stringify(data)); 
 }
