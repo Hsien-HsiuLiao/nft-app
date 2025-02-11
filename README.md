@@ -1,6 +1,6 @@
 # NFT app
 
-* frontend - deployed to https://hhl-nft-app.netlify.app/ , also deployed frontend as docker container to AWS Fargate
+* frontend - deployed to https://hh-nft.netlify.app/ , also deployed frontend as docker container to AWS Fargate
 
 
 
@@ -38,10 +38,6 @@ PRIVATE_KEY = "your-metamask-private-key"
 
 `npx hardhat run scripts/deploy.js --network sepolia`
 
-deployed to 
-
-https://sepolia.etherscan.io/address/0x97848BfB241EBd360e3B21dA36eFB7B366017c3E
-
 
 ### local development
 
@@ -49,6 +45,3 @@ https://sepolia.etherscan.io/address/0x97848BfB241EBd360e3B21dA36eFB7B366017c3E
 - cd frontend
 - npm install
 - npm start
-
-### netlify
-- compile frontend with `npm run build`
